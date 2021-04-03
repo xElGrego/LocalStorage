@@ -6,6 +6,7 @@ import { HomeComponent } from './componentes/home/home.component';
 import { PedidosComponent } from './componentes/pedidos/pedidos.component';
 import { ProductosComponent } from './componentes/productos/productos.component';
 
+
 const routes: Routes = [
   {
     path: '',component :  HomeComponent

@@ -1,1 +1,20 @@
-<p>agregarclientes works!</p>
+<div class="container">
+    <!--  Property binding", sirve para asignar un 
+    valor a una propiedad de un elemento de un template -->
+    <form action="" [formGroup]="formularioAgregar">
+        <div class="form-group">
+            <label for=""> Nombre </label>
+            <input type="text" formControlName="nombre" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for=""> Apellido </label>
+            <input type="text" formControlName="apellido" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for=""> Dirección </label>
+            <textarea cols="20" formControlName="direccion" rows="5" class="form-control"></textarea>
+        </div>
+        <br>
+        <button [disabled]="!formularioAgregar.valid" class="btn btn-outline-dark"> Agregar </button>
+    </form>
+</div>
