@@ -6,13 +6,19 @@ import { AppComponent } from './app.component';
 import { EncabezadoComponent } from './componentes/encabezado/encabezado.component';
 import { ProductosComponent } from './componentes/productos/productos.component';
 import { PedidosComponent } from './componentes/pedidos/pedidos.component';
+import { ClientesComponent } from './componentes/clientes/clientes.component';
+import { HomeComponent } from './componentes/home/home.component';
+import { AgregarclientesComponent } from './componentes/agregarclientes/agregarclientes.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     EncabezadoComponent,
     ProductosComponent,
-    PedidosComponent
+    PedidosComponent,
+    ClientesComponent,
+    HomeComponent,
+    AgregarclientesComponent
   ],
   imports: [
     BrowserModule,

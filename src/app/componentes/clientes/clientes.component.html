@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12 col-md-12">
+            <div class="container" *ngFor="let item of ClientesLocales">
+                <div class="card">
+                    <div class="card-body">
+                        <p>Nombre: {{item.nombre}}</p>
+                        <p>Apellido {{item.apellido}} </p>
+                        <p>Edad {{item.edad}}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="card" *ngFor="let item of productosLocales">
+                    <div class="card-body">
+                        <p>Nombre: {{item.nombre}}</p>
+                        <p>Apellido {{item.precio | currency}} </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col justify-content-center">
+            <div class="btn-group">
+                <button class="btn btn-primary" (click)="guardarCliente()"> Guardar Cliente</button>
+                <button class="btn btn-primary" (click)="guardarProducto()"> Guardar Producto </button>
+                <button class="btn btn-danger" (click)="eliminarCliente()">Eliminar Cliente</button>
+                <button class="btn btn-outline-info" (click)="eliminarProducto()"> Eliminar Producto</button>
+                <button class="btn btn-outline-info" (click)="eliminarTodo()"> Eliminar Todo</button>
+            </div>
+        </div>
+    </div>
+</div>
